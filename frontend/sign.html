@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Amazon-Login into Your Account</title>
+   <style>
+      * {
+         padding: 0;
+         margin: 0;
+      }
+      body{
+         background-color: beige;
+      }
+      .container{
+         display: flex;
+         align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 90px;
+        background-color: darkgray;
+        width: 90vmin;
+        height: 75vmin;
+        margin-left: 400px;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+      
+      form{
+         display: flex;
+         flex-direction: column;
+         gap: 19px;
+         margin-top: 25px;
+      }
+      label{
+         font-size: 25px;
+      }
+      input{
+         font-size: 25px;
+         border-radius: 1rem;
+         border-left-width: 2px;
+         border-right-width: 2px;
+         text-align: center;
+      }
+      button{
+         height: 35px;
+         border: 2px solid black;
+         border-radius: 1rem;
+         width: 100px;
+         margin-top: 10px;
+         margin-left: 90px;
+      }
+      p{
+         font-size: 30px;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <p>Login Into Your Account</p>
+      <form onsubmit="handleSign(event)">
+         <label for="email">Enter Your Email : </label>
+         <input type="email" name="email" placeholder="email" required>
+
+         <label for="password">Enter Your password : </label>
+         <input type="password" name="password" placeholder="password" required>
+         <button type="submit">Login</button>
+   </form>
+     </div>
+
+   <script>
+      async function handleSign(event){
+         event.preventDefault();
+
+         const email=event.target.email.value;
+         const password=event.target.password.value;
+
+         try{
+            const res=await fetch("http://localhost:3000/sign",{
+               method:"POST",
+                headers: {
+                  "Content-Type": "application/json"
+               },
+               body: JSON.stringify({email, password })
+            })
+
+            const data = await res.json();
+            alert("sign up Done");
+
+            if(res.ok){
+               localStorage.setItem("username", data.newSign.name);
+               window.location.href="index.html"
+            }
+         }
+         catch (err) {
+            console.error("Error:", err);
+            alert("Failed to create login");
+         }
+      }
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"
+    href="data:image/png;base64,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">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="nav-bar">
+    <div>
+      <img class="img"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs0slaQKVBAkgZ5LAKY4d6RhmUPoJ0rc9GiQ&s" alt="">
+    </div>
+    <div class="location-info">
+      <p>Delivering to delhi 110022</p>
+      <p class="location">Update location</p>
+    </div>
+    <div class="amazon-search">
+      <select class="search-select">
+        <option value="all">All</option>
+        <option value="books">Books</option>
+        <option value="electronics">Electronics</option>
+      </select>
+      <input type="text" class="search-input" placeholder="Search Amazon.in" id="searchbox">
+    </div>
+    <div class="orders-list">
+      <p>Returns</p>
+      <p>&Orders</p>
+    </div>
+    <div class="amazon-account">
+      <div class="account" id="accountSection">
+        <a href="login.html" id="loginLink">login</a>
+        <a href="sign.html" id="signLink">signup</a>
+
+        <span id="welcomuser" style="display: none;"></span>
+        <a href="#" id="logoutLink" style="display: none;" onclick="logout()">Logout</a>
+      </div>
+    </div>
+    <div class="cart-box">
+      <div>
+        <img class="cart-img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq7oSV-rVZdO_Y68fQob4Zfe5AF1xQVJ5B0Q&s" alt="">
+      </div>
+      cart
+    </div>
+  </nav>
+
+  <!-- navbar ke niche  -->
+  <nav class="nav-below">
+    <div class="nav-container">
+      <span>MX Players</span>
+      <span>Sells</span>
+      <span>Best Sellers</span>
+      <span>Mobiles</span>
+      <span>Electronics</span>
+      <span>Books</span>
+      <span>Dress</span>
+      <span>Beauty</span>
+      <span>Cars</span>
+      <span>MotorBikes</span>
+      <span>Home</span>
+      <span>Furniture</span>
+      <span>Kitchen</span>
+      <span>Toys</span>
+      <span>Computers</span>
+      <span>Fashion</span>
+      <span>Amazon Pay</span>
+    </div>
+  </nav>
+
+   <div class="main-content">
+    <div class="body-img">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr0F_qg3JUaCt3A9Uqvy57XMWCE0-LkNFl_w&s" alt="Banner" />
+    </div>
+  </div> 
+  
+
+  <!-- body -->
+  <div class="main-wrapper">
+  <div class="container">
+    <div class="item">
+      <p>Head Phones For You | 50% Off</p>
+      <div class="img-wrapper">
+        <img class="img-item"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSO3x9mXtKbAVZXyLkALDmE7B14he_Z0jVxg&s" alt="">
+      </div>
+      <a class="see-more" href="#">See More</a>
+    </div>
+
+    <div class="item">
+      <p>Bed Sheets Collection | 30% Off</p>
+      <div class="img-wrapper">
+        <img class="img-item"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkfZXMkOIhvFLqFZpWcm5wN6yVlvjy_fSs7w&s" alt="">
+      </div>
+      <a class="see-more" href="#">See More</a>
+      </div>
+
+    <div class="item">
+      <p>Jewellery Trends | Flat 40% Off</p>
+      <div class="img-wrapper">
+        <img class="img-item"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEJyRLNwTmc5jIcQeYRPl-becN3_sZQVAvqQ&s" alt="">
+      </div>
+      <a class="see-more" href="#">See More</a>
+    </div>
+
+    <div class="item">
+      <p>Watches for man Trends | Flat 40% Off</p>
+      <div class="img-wrapper">
+        <img class="img-item"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3g7RnzpCosuieYFosd0uWoAAAvvsj24mbzw&s" alt="">
+      </div>
+      <a class="see-more" href="#">See More</a>
+    </div>
+
+    <div class="item">
+      <p>Watches for Women For You | 50% Off</p>
+      <div class="img-wrapper">
+        <img class="img-item"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2o_01iPvXGupICj_qUYGACrA4TM-JVhbN5w&s" alt="">
+      </div>
+      <a class="see-more" href="#">See More</a>
+    </div>
+
+    <div class="item">
+      <p>Toys For Your Child | 30% Off</p>
+      <div class="img-wrapper">
+        <img class="img-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBparHvofRP5pTzgGqRUkG9We_28Xax7NjOw&s" alt="">
+      </div>
+      <a class="see-more" href="#">See More</a>
+    </div>
+
+    <div class="item">
+      <p>Appliances for your home | Flat 40% Off</p>
+      <div class="img-wrapper">
+        <img class="img-item"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikG4QxqqUKJO8hzM-qzsQ2gnDPUnXDSWX7g&s" alt="">
+      </div>
+      <a class="see-more" href="#">See More</a>
+    </div>
+
+    <div class="item">
+      <p>Automotive essentials | Flat 40% Off</p>
+      <div class="img-wrapper">
+        <img class="img-item"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXI_RgUrkgVHqyeIqwJZyXESapjShqdwweUQ&s" alt="">
+      </div>
+      <a class="see-more" href="#">See More</a>
+    </div>
+
+    <div class="conatiner-2">
+      <p>Up to 30% Off | Two Wheels Vehicle</p>
+      <div class="img-wrapper-1">
+        <img class="img-item-1"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCt_uJxM0Rap1hZ2k2hlbShAECQJIvTHDVSQ&s" alt="">
+
+        <img class="img-item-1"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk9oPJjv4hpn_LR3wob1P9wv2XS2wTzLbamg&s" alt="">
+
+        <img class="img-item-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTHj5qn-M0WwDth7lSCBCKRRxxGX5rksrWRQ&s" alt="">
+
+        <img class="img-item-1"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv_ZP-RSbQ9lMfxHZaivtMg4Vd4AISNakH_Q&s" alt="">
+      </div>
+    </div>
+
+    <div class="item">
+      <p>Makeup Set | Flat 40% Off</p>
+      <div class="img-wrapper">
+        <img class="img-item"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCgGOP3r7BCM4bP7Dlu6cPX4GwjeyCqx6WPg&s" alt="">
+      </div>
+      <a class="see-more" href="#">See More</a>
+    </div>
+
+    <div class="item">
+      <p>Best Gym Product | Flat 40% Off</p>
+      <div class="img-wrapper">
+        <img class="img-item"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuIPuZwfweMEJXnARQxU9x9HYwgkeDohYIMA&s" alt="">
+      </div>
+      <a class="see-more" href="#">See More</a>
+    </div>
+
+    <div class="item">
+      <p>Best Sellers In Sports | Flat 40% Off</p>
+      <div class="img-wrapper">
+        <img class="img-item"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0jgmoQAw1BmtmNPW7ecZdTUYPpw3oyQICgg&s" alt="">
+      </div>
+      <a class="see-more" href="#">See More</a>
+    </div>
+
+    <div class="item">
+      <p>Best equipment For Kitchens | Flat 40% Off</p>
+      <div class="img-wrapper">
+        <img class="img-item"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJKdqHLVu7X7PtBplq9s8k9NmXP-bEJX_13w&s" alt="">
+      </div>
+      <a class="see-more" href="#">See More</a>
+    </div>
+
+    <div class="conatiner-2">
+      <p>Up to 30% Off | Top deals on bottles</p>
+      <div class="img-wrapper-1">
+        <img class="img-item-1"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4s-mZNefXLteDQi1Qc81_t_bPT-UiZal0Ww&s" alt="">
+
+        <img class="img-item-1"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRydKZKqmEpDhJQbQ36lOH7nK6ss7r9LBE1DA&s" alt="">
+
+        <img class="img-item-1"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxK5gSr9e0_Lsgn6DgMsQZJxe7vnpXn5u9Q&s" alt="">
+
+        <img class="img-item-1"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-VoNJAa1vLMtYwRi0OYxU-jVEqIWF7EpOqw&s" alt="">
+
+          <img class="img-item-1"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8TewpREAJD4kFr91tiQKHvKHwrMJSaWKwNQ&s" alt="">
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-1">
+      <p>Back to Top</p>
+    </div>
+  
+    <div class="footer-2">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Get to Know Us</h4>
+          <span>About Amazon</span>
+          <span>Careers</span>
+          <span>Press Releases</span>
+          <span>Amazon Science</span>
+        </div>
+        <div class="footer-column">
+          <h4>Connect with Us</h4>
+          <span>Facebook</span>
+          <span>Twitter</span>
+          <span>Instagram</span>
+        </div>
+        <div class="footer-column">
+          <h4>Make Money with Us</h4>
+          <span>Sell on Amazon</span>
+          <span>Sell under Amazon Accelerator</span>
+          <span>Protect and Build Your Brand</span>
+          <span>Amazon Global Selling</span>
+        </div>
+        <div class="footer-column">
+          <h4>Let Us Help You</h4>
+          <span>COVID-19 and Amazon</span>
+          <span>Your Account</span>
+          <span>Returns Centre</span>
+          <span>Help</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-3">
+      <p>© 2025 Your Company Name</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
